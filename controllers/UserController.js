@@ -31,6 +31,7 @@ class UserController {
         maxAge: 30 * 24 * 60 * 60 * 1000,
         httpOnly: true
       });
+      console.log(response.json(userData));
       return response.json(userData);
     } catch (error) {
       next(error);
